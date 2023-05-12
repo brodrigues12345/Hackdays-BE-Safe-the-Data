@@ -20,6 +20,7 @@ To run the software, you need to have both Python (for the Flask backend) and No
 cd /path/to/flask
 # Activate your virtual environment here if necessary
 python app.py
+'''
 
 2. In a new terminal window, navigate to the React app's directory and start the React app:
 
