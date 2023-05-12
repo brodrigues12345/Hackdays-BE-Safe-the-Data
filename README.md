@@ -16,19 +16,19 @@ To run the software, you need to have both Python (for the Flask backend) and No
 
 1. First, navigate to the Flask app's directory and activate your virtual environment (if you're using one). Then, run the Flask app:
 
-```bash
-cd /path/to/flask
+`cd /path/to/flask`
+
 # Activate your virtual environment here if necessary
-python app.py
+
+`python app.py`
 
 2. In a new terminal window, navigate to the React app's directory and start the React app:
 
-''' 
-cd /path/to/react
-npm start
-'''
+`cd /path/to/react`
+`npm start`
+
 
 Or, you can run both the Flask and React apps at the same time with one command:
 
-'''npm run dev'''
+`npm run dev`
 
