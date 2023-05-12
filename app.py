@@ -1,8 +1,9 @@
 from flask import Flask, request, jsonify
 
+# dummy function for now
 def convert_to_safe_date(file_path):
-    # here will be the code that changes XML tags
-    pass
+    changes = []
+    return changes
 
 app = Flask(__name__)
 
