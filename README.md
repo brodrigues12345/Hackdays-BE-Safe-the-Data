@@ -1,6 +1,13 @@
 # Docx Date Converter App
 
-This application converts .docx files that have a dynamic date field and saves them with a static date of the data when the .docx was created. It is a solution to the challenge of preserving the integrity of .docx files in archival systems.
+This simple Application allows users to select a Docx file to be analyzed. The analysis consists of checking if there are any variable fillable fields in the document, replacing them in the XML source code with a static value, and delivering a set of relevant metadata values for the analyzed document. For the first version, the solution will focus only on replacing variable date fields, which would otherwise be automatically filled by Microsoft Word after opening the document. Date values will be replaced by a static date at the time of analysis. This application converts .docx files that have a dynamic date field and saves them with a static date of the data when the .docx was created. It is a solution to the challenge of preserving the integrity of .docx files in archival systems.
+
+The solution consists of three parts:
+- Front-End (React)
+- API (Python)
+- Back-End (Python)
+
+![Docx Date Converter](https://github.com/LucaKern/Hackdays-BE-Safe-the-Data/blob/main/Screenshot_20230512_at_18.01.23.png.)
 
 ## The Challenge
 
@@ -33,3 +40,16 @@ Or, you can run both the Flask and React apps at the same time with one command:
 ```
 npm run dev
 ```
+## Further Case Analysis
+
+DOCX files, commonly used for document storage and sharing, may not be optimal for long-term archiving due to several factors:
+
+1. Compatibility: DOCX is a file format associated with Microsoft Office applications. While it enjoys widespread support presently, there is no assurance of its future dominance. If you rely on specific software to access DOCX files, there is a risk of obsolescence or incompatibility with newer systems, hindering retrieval of archived documents.
+
+2. Backward Compatibility: With each new release, Microsoft Office introduces changes to the DOCX format. Opening older DOCX files with newer Office versions can result in formatting errors, missing content, or altered document layout. Such issues pose challenges when accessing archived files after a significant duration.
+
+3. Data Corruption: Over time, files may experience corruption or degradation due to hardware failures, software bugs, or storage media issues. Due to the dependencies and complexity of the DOCX format, it is relatively more susceptible to integrity problems. Repairing corrupted DOCX files can be challenging, potentially leading to data loss or incomplete retrieval of archived documents.
+
+4. Long-Term Storage Standards: For long-term archiving, employing open, standardized file formats is recommended. Formats like PDF/A, designed specifically for archiving, ensure document preservation and accessibility over extended periods. These formats are independent of specific software vendors, enhancing compatibility and longevity.
+
+While converting important documents to standardized formats like PDF/A is generally advised for long-term archiving, it is worth noting that the widespread use and potential future developments surrounding DOCX could contribute to its acceptance as an archival standard. Factors such as popularity, backward compatibility efforts, support from Microsoft, industry acceptance, and technological advancements might enhance the reliability of DOCX as an archiving format. However, until industry-wide acceptance and preservation efforts validate its suitability, adhering to current best practices by relying on standardized formats like PDF/A for long-term archiving remains a prudent approach.
